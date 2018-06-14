@@ -1,0 +1,17 @@
+language: java
+jdk:
+- oraclejdk8
+
+install:
+- mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+
+services:
+- mysql
+deploy:
+   provider: cloudfoundry
+   username: patelshyamji4@gmail.com
+   password: Apv@90055
+   api: https://api.run.pivotal.io
+   organization: EMS-Shyam
+   space: development
+   buildpack: https://github.com/cloudfoundry/java-buildpack

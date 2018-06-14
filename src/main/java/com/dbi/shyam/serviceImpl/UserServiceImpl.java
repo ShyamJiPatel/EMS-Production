@@ -55,7 +55,7 @@ public class UserServiceImpl implements UserService {
 			return false;
 		}
 		// emailService.send(user, true);
-		emailService.send(user, false);
+//		emailService.send(user, false);
 		return true;
 	}
 
