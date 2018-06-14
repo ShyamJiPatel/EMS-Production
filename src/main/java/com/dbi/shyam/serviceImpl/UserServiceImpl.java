@@ -10,7 +10,6 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.dbi.shyam.email.EmailService;
 import com.dbi.shyam.entities.Role;
 import com.dbi.shyam.entities.User;
 import com.dbi.shyam.repositories.UserRepository;
@@ -24,8 +23,6 @@ public class UserServiceImpl implements UserService {
 	private UserRepository userRepository;
 	@Autowired
 	private RoleService roleService;
-	@Autowired
-	private EmailService emailService;
 
 	@Bean
 	public PasswordEncoder getPasswordEncoder() {
