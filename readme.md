@@ -1,3 +1,4 @@
-Send email in spring boot with Spring-oauth2-jpa-example
-A simple and basic example to secure REST APsI with authentication using Spring Boot, Security , OAuth2 and JPA.
+This is an application for managing the employees and projects in an organization.
+This is a secure API with OAUTH2 and with secure Angular4 App.
+
 
